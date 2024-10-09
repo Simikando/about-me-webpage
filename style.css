@@ -144,6 +144,17 @@ nav .navlinks li a{
 .btn.active{
     border-color: #007ced;
 }
+.hero-text .social{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .social:hover{
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
 
 /* Responsive */
 
@@ -175,7 +186,7 @@ nav .navlinks li a{
     nav .navlinks{
         position: absolute;
         top: 110px;
-        right: 0;
+        right: -100%;
         bottom: 0;
         width: 60%;
         height: 100vh;
@@ -195,5 +206,15 @@ nav .navlinks li a{
     }
     nav .navlinks.open{
         right: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0;
     }
 }
